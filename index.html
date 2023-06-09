@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./images/ewoma.png" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#photos">Images</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1>Hello, I'm <span class="name">Ewoma</span></h1>
+                <br>
+                <h3>An Aspring Software Developer</h3>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/IMG-4368.JPG" class="image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am an enthusiastic and dedicated professional with a passion for continuous learning and
+                        growth. I am eager to take on new challenges and broaden my horizons. I am highly motivated to
+                        continue growing professionally, whether through pursuing advanced certifications, attending
+                        industry conferences, or taking on increasingly complex projects. I strive to stay at the
+                        forefront of emerging trends and technologies, as I believe that continuous learning is
+                        essential for personal and organizational success.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links active-link" onclick="opentab('Experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Education">
+                        <ul>
+                            <li><span>Covenant University, Ogun State, Nigeria</span><br>JULY 2023<br>BSc. Hons
+                                Electrical and Electronics Engineering</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Skills">
+                        <ul>
+                            <li><span>Languages</span><br>HTML, CSS and JavaScript, C, Python</li>
+                            <li><span>Technologies</span><br>React.js</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>INTEGRATED ORANGE, Lagos — Intern</span><br>Managed website content and performed
+                                web editing tasks, including uploading blog posts and ensuring proper formatting and
+                                structure.
+                                Conducted thorough research to gather relevant information for blog post uploads,
+                                ensuring accuracy and credibility of content.
+                                Contributed to the improvement of website navigation and user interface, enhancing
+                                overall user experience.
+                                Assisted in the development and implementation of content calendars and editorial
+                                schedules.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="certifications">
+        <div class="container">
+            <h1 class="sub-title">Certifications</h1>
+            <div class="certificate-list">
+                <h3>Coursera Course Certificates:</h3>
+                <ul>
+                    <li>Electric Power Systems</li>
+                    <li>Fundamentals of Network Communication</li>
+                    <li>Introduction to Electronics</li>
+                    <li>Introduction to the Internet of Things and Embedded Systems</li>
+                    <li>Motor and Motor Control Circuits</li>
+                    <li>Pressure, Force, Motion, and Humidity Sensors</li>
+                    <li>Introduction to FrontEnd</li>
+                    <li>HTML and CSS In Depth</li>
+                    <li>Programming with Javascript</li>
+                    <li>Version Control</li>
+                    <li>React Basics</li>
+                    <li>Advanced React</li>
+                </ul>
+            </div>
+            <div class="certificate-list">
+                <h3>Ongoing Certificates</h3>
+                <ul>
+                    <li>The Complete 2023 Web Development Bootcamp - Udemy</li>
+                    <li>Alx Program - Software Engineering Track</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="photos">
+        <div class="container">
+            <h1 class="sub-title">Images</h1>
+            <div class="photo-list">
+                <div class="photo">
+                    <img src="./images/IMG-0186.jpg">
+                </div>
+                <div class="photo">
+                    <img src="./images/IMG-2200.JPG">
+                </div>
+                <div class="photo">
+                    <img src="./images/IMG-4020.JPG">
+                </div>
+                <div class="photo">
+                    <img src="./images/school.JPG">
+                </div>
+                <div class="photo">
+                    <img src="./images/IMG-5603.JPG">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>Email: ewomaozore@gmail.com</p>
+                    <p>Phone: 08134970348</p>
+                    <p>GitHub: <a href="https://github.com/EwomaOzore">EwomaOzore</a></p>
+                    <p>Linkedn: <a href="https://www.linkedin.com/in/ewomaozore/">EwomaOzore</a></p>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your E-mail" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Ewomaoghene Ozore. All rights reserved.</p>
+    </footer>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        let education = document.getElementById("Education");
+        let skills = document.getElementById("Skills");
+        let experience = document.getElementById("Experience");
+
+        const opentab = (tabname) => {
+            switch (tabname) {
+                case "Skills":
+                    education.classList.remove("active-tab");
+                    experience.classList.remove("active-tab");
+                    skills.classList.add("active-tab");
+                    break;
+
+                case "Experience":
+                    education.classList.remove("active-tab");
+                    skills.classList.remove("active-tab");
+                    experience.classList.add("active-tab");
+                    break;
+
+                default:
+                    skills.classList.remove("active-tab");
+                    experience.classList.remove("active-tab");
+                    education.classList.add("active-tab");
+                    break;
+            }
+        };
+    </script>
+</body>
+
+</html>
