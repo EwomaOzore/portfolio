@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
@@ -6,51 +6,55 @@
     line-height: 30px;
 }
 
-body{
+html {
+    scroll-behavior: smooth;
+}
+
+body {
     background: black;
     color: white;
 }
 
-#header{
+#header {
     width: 100%;
     height: 100vh;
-    background-image: url(images/Untitled.png);
+    background-image: url(images/virtual-reality.png);
     background-size: 30%;
     background-repeat: no-repeat;
     background-position: 80% bottom;
 }
 
-.container{
+.container {
     padding: 10px 10%;
     width: 100%;
     height: 100%;
 }
 
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.logo{
+.logo {
     width: 140px;
 }
 
-nav ul li{
+nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
 }
 
-nav ul li a{
+nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
     position: relative;
 }
 
-nav ul li a::after{
+nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
@@ -61,11 +65,11 @@ nav ul li a::after{
     transition: 0.5s;
 }
 
-nav ul li a:hover::after{
+nav ul li a:hover::after {
     width: 100%;
 }
 
-.header-text{
+.header-text {
     margin-top: 20%;
     margin-right: 50%;
     font-size: 20px;
@@ -73,53 +77,55 @@ nav ul li a:hover::after{
     justify-content: center;
 }
 
-.header-text h1{
+.header-text h1 {
     font-size: 50px;
     margin-top: 20px;
 }
 
-.header-text h1 .name{
+.header-text h1 .name {
     color: #6b1e1e;
 }
 
-#about{
+
+#about {
     padding: 80px 0;
     color: #ffffff;
 }
 
 
-.row{
+.row {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.about-col-1{
+.about-col-1 {
     flex-basis: 35%;
 }
-.about-col-1 img{
+
+.about-col-1 img {
     width: 100%;
     height: 80%;
     border-radius: 15px;
 }
 
-.about-col-2{
+.about-col-2 {
     flex-basis: 60%;
 }
 
-.sub-title{
+.sub-title {
     padding-bottom: 50px;
     font-size: 60px;
     font-weight: 500;
     color: #6b1e1e;
 }
 
-.tab-titles{
+.tab-titles {
     display: flex;
     margin: 20px 0 40px;
 }
 
-.tab-links{
+.tab-links {
     margin-right: 50px;
     color: #6b1e1e;
     font-size: 25px;
@@ -128,7 +134,7 @@ nav ul li a:hover::after{
     position: relative;
 }
 
-.tab-links::after{
+.tab-links::after {
     content: '';
     width: 0;
     height: 3px;
@@ -139,33 +145,33 @@ nav ul li a:hover::after{
     transition: 0.5s;
 }
 
-.tab-links.active-link::after{
+.tab-links.active-link::after {
     width: 50%;
 }
 
-.tab-contents ul li{
+.tab-contents ul li {
     list-style: none;
     margin: 10px 5px;
 }
 
-.tab-contents ul li span{
+.tab-contents ul li span {
     color: #6b1e1e;
     font-size: 20px;
 }
 
-.tab-contents{
+.tab-contents {
     display: none;
 }
 
-.tab-contents.active-tab{
+.tab-contents.active-tab {
     display: block;
 }
 
-#certifications{
+#certifications {
     padding: 30px 0;
 }
 
-.certificate-list{
+.certificate-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
@@ -174,44 +180,45 @@ nav ul li a:hover::after{
     line-height: 30px;
 }
 
-#photos{
+#photos {
     padding: 50px 0;
 }
 
-.photo-list{
+.photo-list {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
 }
 
-.photo{
+.photo {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
 }
 
-.photo img{
-    max-width: 100%;
+.photo img {
+    max-width: 50%;
     border-radius: 10px;
     display: block;
 }
 
-.contact-left{
+.contact-left {
     flex-basis: 35%;
 }
 
-.contact-right{
+.contact-right {
     flex-basis: 60%;
 }
 
-.contact-left p{
+.contact-left p {
     margin-top: 30px;
 }
 
-.contact-right form{
+.contact-right form {
     width: 100%;
 }
 
-form input, form textarea{
+form input,
+form textarea {
     width: 100%;
     border: 0;
     outline: none;
@@ -223,16 +230,22 @@ form input, form textarea{
     border-radius: 6px;
 }
 
-.btn{
-    width: 30%;
+.btn {
+    -webkit-border-radius: 9;
+    -moz-border-radius: 9;
+    border-radius: 9px;
+    text-shadow: 0px 1px 0px #000000;
+    font-family: 'Montserrat', sans-serif;
     color: #ffffff;
-    font-weight: bold;
-    background-color: #6b1e1e;
-    padding: 8px;
-    border-radius: 10px;
+    font-size: 20px;
+    background: #6b1e1e;
+    padding: 10px 20px 10px 20px;
     text-decoration: none;
-    cursor: pointer;
-    border-color: #6b1e1e;
+}
+
+.btn:hover {
+    background: #a13f3f;
+    text-decoration: none;
 }
 
 footer {

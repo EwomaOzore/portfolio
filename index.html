@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
+    <title>Ewoma's Portfolio</title>
 </head>
 
 <body>
@@ -30,6 +30,8 @@
                 <br>
                 <h3>An Aspring Software Developer</h3>
             </div>
+            <br>
+                <a href="documents/Ewoma Ozore's Curriculum Vitae.pdf" download class="btn">Download CV</a>
         </div>
     </div>
 
@@ -119,19 +121,22 @@
             <h1 class="sub-title">Images</h1>
             <div class="photo-list">
                 <div class="photo">
-                    <img src="./images/IMG-0186.jpg">
+                    <img src="./images/123.JPG">
                 </div>
                 <div class="photo">
-                    <img src="./images/IMG-2200.JPG">
+                    <img src="./images/IMG-0141.jpg">
                 </div>
                 <div class="photo">
-                    <img src="./images/IMG-4020.JPG">
+                    <img src="./images/IMG-0181.JPG">
                 </div>
                 <div class="photo">
-                    <img src="./images/school.JPG">
+                    <img src="./images/IMG-1978.jpg">
                 </div>
                 <div class="photo">
-                    <img src="./images/IMG-5603.JPG">
+                    <img src="./images/IMG-8241.jpg">
+                </div>
+                <div class="photo">
+                    <img src="./images/IMG-8261.JPG">
                 </div>
             </div>
         </div>
@@ -163,36 +168,7 @@
         <p>&copy; 2023 Ewomaoghene Ozore. All rights reserved.</p>
     </footer>
 
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-
-        let education = document.getElementById("Education");
-        let skills = document.getElementById("Skills");
-        let experience = document.getElementById("Experience");
-
-        const opentab = (tabname) => {
-            switch (tabname) {
-                case "Skills":
-                    education.classList.remove("active-tab");
-                    experience.classList.remove("active-tab");
-                    skills.classList.add("active-tab");
-                    break;
-
-                case "Experience":
-                    education.classList.remove("active-tab");
-                    skills.classList.remove("active-tab");
-                    experience.classList.add("active-tab");
-                    break;
-
-                default:
-                    skills.classList.remove("active-tab");
-                    experience.classList.remove("active-tab");
-                    education.classList.add("active-tab");
-                    break;
-            }
-        };
-    </script>
+<script src="index.js"></script>
 </body>
 
 </html>
