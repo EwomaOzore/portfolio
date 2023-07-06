@@ -190,13 +190,16 @@ nav ul li a:hover::after {
 }
 
 .photo {
+    width: 3000px;
+    height: 200px;
     border-radius: 10px;
     position: relative;
     overflow: hidden;
 }
 
 .photo img {
-    max-width: 50%;
+    max-width: 200%;
+    max-height: 100%;
     border-radius: 10px;
     display: block;
 }
